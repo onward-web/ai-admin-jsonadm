@@ -16,11 +16,17 @@
 	"require": {
 		"php": ">=5.3.3",
 		"composer/installers": "^1.0",
-		"aimeos/aimeos-core": "dev-master"
+		"aimeos/aimeos-core": "dev-onward"
 	},
 	"require-dev": {
 		"zendframework/zend-diactoros": "~1.3"
 	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url":  "git@github.com:onward-web/aimeos-core.git"
+		}
+	],
 	"autoload": {
 		"psr-4": {
 			"Aimeos\\Admin\\Jsonadm\\": "admin/jsonadm/src/Admin/Jsonadm/"
